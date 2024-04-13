@@ -1,7 +1,8 @@
 name: checkin
 on:
   schedule:
-    - cron: "45 02 * * *"
+    - cron: "45 03 * * *"
+  workflow_dispatch: # 允许手动触发
 
 jobs:
   sync_with_upstream:
