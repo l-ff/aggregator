@@ -10,11 +10,8 @@ jobs:
     name: auto checkin for traffic
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
-        with:
-          ref: master
-
+      - uses: actions/checkout@v3
+  
       - name: checkin
         uses: actions/setup-python@v2
         with:
