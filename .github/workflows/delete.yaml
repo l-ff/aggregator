@@ -1,14 +1,14 @@
 name: Delete Old Workflow Runs
 on:
-  schedule:
-    - cron: "0 0 * * SUN"
+  #schedule:
+  #  - cron: "0 0 * * SUN"
   workflow_dispatch: # 允许手动触发
 
 jobs:
   del_runs:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete
+      - name: 删除
         uses: GitRML/delete-workflow-runs@main
         with:
           token: ${{ github.token }}
